@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prefeitura Municipal de São João da Ponte - MG</title>
+
+    <link rel="icon" href="imagens/logo.png" type="image/png">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+     <!-- Estilo próprio -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Responsivo para adptar -->
+    <link rel="stylesheet" href="responsivo.css">
+
+    
+</head>
+
+
+<body>
+
+
+
+<header class="topo">
+    <div class="container-topo">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="imagens/011 BRANCO.png" alt="Logo da Prefeitura">
+        </div>
+
+        <!-- TÍTULO -->
+        <div class="titulo">
+            <h3>Prefeitura Municipal de</h3>
+            <h1 style="font-weight: bold;">SÃO JOÃO DA PONTE - MG</h1>
+
+        </div>
+
+
+     <!-- Container principal -->
+<div class="busca-redes">
+    <!-- Campo de busca -->
+    <div class="campo-busca">
+        <input id="campoBusca" type="text" placeholder="Buscar no site..."
+            title="Digite o termo a pesquisar">
+        <button id="botaoBusca" title="Clique para realizar a busca">🔍</button>
+    </div>
+
+    <!-- Ícones de redes sociais -->
+        <div class="redes-sociais">
+             <a href="https://www.instagram.com/pmsjponteoficial/" target="_blank">
+                <img src="imagens/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://wa.me/5511999999999" target="_blank">
+                <img src="imagens/whatsapp.png" alt="WhatsApp">
+            </a>
+
+            <a href="https://www.facebook.com/share/16ooAMSvKe/" target="_blank">
+                <img src="imagens/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+    </div> <!-- FECHANDO A DIV container-topo -->
+</header>
+
+
+        <!-- MENU -->
+<div class="menu">
+
+    <ul class="menu-list">
+        <li><a href="index.html">INÍCIO</a></li>
+
+        <li class="submenu">
+            <a href="#">PREFEITURA</a>
+            <ul>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="dados.html">Dados do Município</a></li>
+                <li><a href="gainete.html">Gabinete Municipal</a></li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <a href="#">SECRETARIAS</a>
+            <ul>
+                <li><a href="financas.html">Finanças/Receitas Municipais</a></li>
+                <li><a href="cultura.html">Cultura, Esporte e Turismo</a></li>
+                <li><a href="obras.html">Infraestrutura (Obras, Serviços Urbanos, Estrada e Rodagem)</a></li>
+                <li><a href="rh.html">Administração e Recursos Humanos</a></li>
+                <li><a href="assistencia.html">Assistência Social</a></li>
+                <li><a href="agricultura.html">Agricultura</a></li>
+                <li><a href="educacao.html">Educação</a></li>
+                <li><a href="saude.html">Saúde</a></li>
+                <li><a href="planejamento.html">Planejamento</a></li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <a href="#">SERVIÇOS</a>
+            <ul>
+                <li><a href="https://transparencia.pmsaojoaodaponte.contassconsultoria.com.br/">Transparência</a></li>
+                <li><a href="ouvidoria.html">Ouvidoria</a></li>
+                <li><a href="https://transparencia.fumasa.contassconsultoria.com.br/">Transparência Fumasa</a></li>
+                <li><a href="ouvidoriafumasa.html">Ouvidoria Fumasa</a></li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <a href="#">LEGISLAÇÃO</a>
+            <ul>
+                <li><a href="leis.html">Atos Normativos</a></li>
+                <li><a href="leistributarias.html">Leis Tributárias</a></li>
+                <li><a href="leipnab.html">Programa Nacional Aldir Blanc-PNAB</a></li>
+                <li><a href="leipaulogustavo.html">Lei Paulo Gustavo</a></li>
+            </ul>
+        </li>
+
+        <li class="submenu">
+            <a href="#">LICITAÇÕES</a>
+            <ul>
+                <li><a href="licitacoes.html">Prefeitura Municipal</a></li>
+                <li><a href="licitacoesfumasa.html">Fumasa</a></li>
+            </ul>
+        </li>
+
+        <li><a href="noticias.html">NOTÍCIAS</a></li>
+        <li><a href="contatos.html">CONTATOS</a></li>
+    </ul>
+</div>
+
+
+<!-- BANNER / CARROSSEL -->
+
+<div id="carouselHome" class="carousel slide mt-6" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+
+            <img src="imagens/layout site 2.png" class="d-block w-100 banner-img" alt="">
+            
+        </div>
+
+        <div class="carousel-item">
+            <img src="imagens/layout site-1.png" class="d-block w-100 banner-img" alt="">
+            
+        </div>
+    </div>
+</div>
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+
+
+
+
+
+
+<!-- SERVIÇOS -->
+<section id="servicos" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 fw-bold"> ACESSO RÁPIDO</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="https://e-cidadeonline.contassconsultoria.com.br/pmsaojoaodaponte/" target="_blank">
+                        <img src="imagens/servicos/certidao.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3">Certidão Municipal</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="http://nfesaojoaodaponte.contassconsultoria.com.br/auth/login/" target="_blank">
+                        <img src="imagens/servicos/nf.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3">Nota Fiscal Eletrônica</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="#" target="_blank">
+                        <img src="imagens/servicos/taxas.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3"> Taxas Municipais/Fiscalização</h5>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="#" target="_blank">
+                        <img src="imagens/servicos/iptu.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3"> IPTU Online</h5>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="#" target="_blank">
+                        <img src="imagens/servicos/fumasa.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3"> Fundação Municipal de Assistência à Saúde - FUMASA</h5>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="https://www.saojoaodaponte.mg.leg.br/" target="_blank">
+                        <img src="imagens/servicos/CAMARA 03.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3"> Câmara Municipal </h5>
+                </div>
+            </div>
+
+        <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="licitacoes1.html" target="_blank">
+                        <img src="imagens/servicos/licitacoes.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3"> Licitações </h5>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <img src="imagens/servicos/convenio.png" class="service-icon">
+                    <h5 class="mt-3">Convênios</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="https://www.saojoaodaponte.mg.gov.br:2096/" target="_blank">
+                        <img src="imagens/servicos/webemail.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3">Webmail</h5>
+                </div>
+            </div>
+
+            <!-- Linha 2 (mas ainda dentro da mesma row) -->
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="https://www.mgl.com.br/busca/#Engine=Start&Pagina=1&Busca=S%C3%A3o%20joao" target="_blank">
+                        <img src="imagens/servicos/leilao.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3">Leilões</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="https://www.diariomunicipal.com.br/amm-mg/pesquisar" target="_blank">
+                        <img src="imagens/servicos/portarias.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3">Portarias</h5>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="service-card text-center shadow p-4">
+                    <a href="#" target="_blank">
+                        <img src="imagens/servicos/concurso.png" class="service-icon">
+                    </a>
+                    <h5 class="mt-3">Concursos e Processos Seletivos</h5>
+                </div>
+            </div>
+
+           
+
+    
+            
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+
+
+<!-- COMUNICADOS OFICIAL -->
+ 
+<section style="padding:40px 20px; background:#f5f5f5;">
+  <h2 class="text-center mb-4 fw-bold"> COMUNICADOS OFICIAIS</h2>
+
+  <!-- Container flexível para os cards -->
+  <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+
+    <!-- Card 1 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="comunicados/1.png" alt="Corrida" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      
+    </div>
+
+    <!-- Card 2 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="comunicados/2.png" alt="Educação" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      
+    </div>
+
+    <!-- Card 3 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="comunicados/3.png" alt="Saúde" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      
+    </div>
+
+    
+
+    <!-- Card 4 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="comunicados/5.png" alt="Saúde" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- NOTÍCIAS -->
+ 
+<section style="padding:40px 20px; background:#f5f5f5;">
+  <h2 class="text-center mb-4 fw-bold">NOTÍCIAS EM DESTAQUE</h2>
+
+  <!-- Container flexível para os cards -->
+  <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+
+    <!-- Card 1 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="noticias/Leilao.png" alt="Corrida" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      <h3 style="font-size:18px; margin-bottom:10px;">Leilão Online da Prefeitura de São João da Ponte/MG</h3>
+      <p style="font-size:14px; color:#555;">Oferece Bens Móveis Inservíveis</p>
+      <a href="noticia1.html" style="text-decoration:none; color:#23408e; font-weight:bold;">Leia mais →</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="noticias/corrida.png" alt="Educação" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      <h3 style="font-size:18px; margin-bottom:10px;">Corrida e Caminhada ‘Eles e Elas’</h3>
+            <p style="font-size:14px; color:#555;">Em Prol da Saúde e Conscientização”</p>
+
+      <a href="noticia2.html" style="text-decoration:none; color:#23408e; font-weight:bold;">Leia mais →</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="background:white; width:300px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,0.2); border-radius:8px; text-align:center;">
+      <img src="noticias/cultura.jpg" alt="Saúde" style="width:100%; height:auto; border-radius:5px; margin-bottom:15px;">
+      <h3 style="font-size:18px; margin-bottom:10px;">A cultura transforma e cria memórias inesquecíveis!</h3>
+      <a href="noticia3.html" style="text-decoration:none; color:#23408e; font-weight:bold;">Leia mais →</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- PORTAL DA TRANSPARÊNCIA -->
+
+<section id="transparencia" class="py-5" 
+         style="background: linear-gradient(to right, #ff8500, #f4f76c, #2688f8);">
+    <div class="container text-center">
+        <h2 style="color:#0b1a5b;" class="fw-bold">PORTAL DA TRANSPARÊNCIA</h2>
+        <p style="color:#0b1a5b;" class="mt-2">
+            Acompanhe gastos, licitações, contratos, folha de pagamento e muito mais.
+        </p>
+        <a href="https://transparencia.pmsaojoaodaponte.contassconsultoria.com.br/" 
+           style="color:#0b1a5b; background-color:white; padding:10px 20px; font-weight:bold; text-decoration:none; border-radius:5px;"
+           class="mt-3 d-inline-block">
+           Acessar Transparência
+        </a>
+    </div>
+</section>
+
+
+<!-- MAPA -->
+<section id="mapa" class="container py-5">
+    <div class="text-center">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1918.3084927013774!2d-44.010193011380174!3d-15.929124446182575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sprefeitura%20s%C3%A3o%20jo%C3%A3o%20da%20ponte!5e0!3m2!1spt-BR!2sbr!4v1763775472976!5m2!1spt-BR!2sbr" 
+            width="100%" 
+            height="250" 
+            style="border:0; border-radius:8px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+
+
+<!-- RODAPÉ -->
+<footer class="rodape-laranja ">
+    <p class="m-0">© 2025 Prefeitura Municipal de São João da Ponte - MG | Todos os direitos reservados.</p>
+    <p>Praça Olímpio Campos, nº 128, Centro 39430-000, Telefone: (38) 3234-1226, Horário de Atendimento: Das 8h às 17h.</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+<a href="acessibilidade.html" 
+   style="position:fixed; bottom:20px; right:20px; background:#0b1a5b; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; font-weight:bold; z-index:1000;">
+   🤚 
+</a>
+
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

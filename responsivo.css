@@ -1,0 +1,175 @@
+/* =======================================
+    VERSÃO FINAL: RESPONSIVO MOBILE (max-width: 992px)
+    ESTILO: MENU HORIZONTAL ROLÁVEL (SCROLLABLE MENU)
+======================================= */
+@media(max-width: 992px) {
+
+    /* --- CORREÇÃO GERAL DO CORPO PARA EVITAR ROLAGEM HORIZONTAL --- */
+    /* CRÍTICO: Impede que qualquer elemento do site crie uma barra de rolagem horizontal */
+    body, html {
+        overflow-x: hidden; 
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* --- AJUSTES DO TOPO/HEADER (Busca e Redes) --- */
+    .container-topo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0; 
+    }
+
+    .titulo { 
+        font-size: 20px; 
+    }
+
+    .busca-redes { 
+        width: 90%; 
+        margin-left: 0; 
+        margin-right: 0; 
+        align-items: center; 
+    }
+
+    .campo-busca { 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .campo-busca input { 
+        width: 100%; 
+    }
+    
+    .buscar { 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+
+    /* --- INÍCIO DO MENU ROLÁVEL (SCROLLABLE MENU) --- */
+
+    /* Oculta o botão hambúrguer (se existir) */
+    .menu-toggle { 
+        display: none !important; 
+    }
+
+    .menu {
+        display: block;
+        min-height: auto;
+        z-index: 9999 !important; 
+        position: relative;
+        margin-bottom: 0 !important; 
+    }
+    
+    /* Configura a lista principal para ROLAGEM HORIZONTAL */
+    .menu .menu-list, 
+    .menu > ul {
+        display: flex !important;
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        justify-content: flex-start; 
+        
+        overflow-x: scroll; 
+        /* Foca a rolagem horizontal */
+        overflow-y: hidden; 
+        
+        -webkit-overflow-scrolling: touch; 
+        
+        position: static; 
+        width: 100%;
+        margin: 0;
+        padding: 0 15px; 
+        box-shadow: none;
+    }
+    
+    .menu .menu-list > li,
+    .menu > ul > li {
+        flex-shrink: 0;
+        width: auto;
+        text-align: center;
+        border-bottom: none !important; 
+        position: relative; 
+        /* Permite que o submenu fique visível */
+        overflow: visible; 
+    }
+    
+    .menu .menu-list > li > a,
+    .menu > ul > li > a {
+        padding: 15px 12px;
+        color: #003f7d; 
+        white-space: nowrap; 
+    }
+    
+    /* Z-INDEX E DISPLAY PADRÃO DO SUBMENU */
+    .menu .submenu ul {
+        position: absolute; 
+        width: 180px; 
+        background: #f78001f3;
+        display: none; /* Oculto por padrão */
+        border-radius: 4px;
+        /* Z-INDEX MÁXIMO (Aparece sobre tudo) */
+        z-index: 10000 !important; 
+        top: 100%;
+        left: 0;
+
+        /* CRÍTICO PARA ROLAGEM VERTICAL DO SUBMENU: */
+        max-height: 250px; /* Limita a altura do submenu (Ajuste se necessário) */
+        overflow-y: auto;   /* Habilita a rolagem vertical */
+    }
+
+    /* NOVO: Classe para exibir o submenu (controlada pelo JS) */
+    .menu .submenu.ativo ul {
+    display: block !important;
+    }
+
+
+    
+    /* --- CORREÇÕES DE CONFLITO COM CONTEÚDO --- */
+
+    /* Força os Cards e Seções a ficarem na camada inferior */
+    .cards, 
+    #servicos, 
+    .service-card, 
+    .card, 
+    .descricao, 
+    .melhorias {
+        position: relative; 
+        z-index: 10 !important; 
+    }
+
+    /* CORREÇÃO DO ESPAÇO EXTRA (Antigo problema do Banner) */
+    #carouselHome {
+        margin-top: 0 !important; 
+    }
+
+    /* CORREÇÃO DO Z-INDEX DO CARROSSEL (Se for reintroduzido) */
+    #carouselHome,
+    .carousel-control-prev,
+    .carousel-control-next {
+        z-index: 500 !important; 
+    }
+
+    /* --- CONTINUAÇÃO OUTROS AJUSTES DE RESPONSIVIDADE --- */
+    
+    .banner-img { 
+        max-height: 30vh; 
+    }
+
+    .service-card, .news-card, .card { 
+        max-width: 200px; 
+        height: 200px; 
+    }
+
+    .descricao, .melhorias { 
+        width: 95%; 
+        padding: 20px; 
+    }
+
+    .imagem-centro { 
+        max-width: 100%; 
+    }
+}
+/* =======================================
+    FIM DO RESPONSIVO MOBILE
+======================================= */
