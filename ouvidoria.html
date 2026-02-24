@@ -53,7 +53,7 @@
                 <img src="imagens/instagram.png" alt="Instagram">
             </a>
 
-            <a href="https://wa.me/5511999999999" target="_blank">
+            <a href=" https://whatsapp.com/channel/0029VbBVWuW42DcWJiJLRe0h" target="_blank">
                 <img src="imagens/whatsapp.png" alt="WhatsApp">
             </a>
 
@@ -93,7 +93,7 @@
                 <li><a href="obras.html">Infraestrutura (Obras, Serviços Urbanos, Estrada e Rodagem)</a></li>
                 <li><a href="rh.html">Administração e Recursos Humanos</a></li>
                 <li><a href="assistencia.html">Assistência Social</a></li>
-                <li><a href="agricultura.html">Agricultura</a></li>
+                <li><a href="agricultura.html">Agricultura e Meio Ambiente</a></li>
                 <li><a href="educacao.html">Educação</a></li>
                 <li><a href="saude.html">Saúde</a></li>
                 <li><a href="planejamento.html">Planejamento</a></li>
@@ -136,45 +136,52 @@
 
 
 
-    <!-- OUVIDORIA -->
+    
+
+<!-- OUVIDORIA -->
+
 <section id="ouvidoria" class="bg-light py-5">
     <div class="container">
-        <h2 class="text-center mb-4 fw-bold">OUVIDORIA MUNICIPAL</h2>
+        <h2 class="text-center mb-4 fw-bold">OUVIDORIA </h2>
 
         <p class="text-center mb-4">
             A Ouvidoria é o canal para você registrar denúncias, reclamações, sugestões, solicitações e elogios.
         </p>
 
-        <form id="formOuvidoria" class="shadow p-4 rounded bg-white">
-            <div class="row g-3">
-                <div class="col-md-6">
-                    <input type="text" id="ouv-nome" placeholder="Seu nome" class="form-control" required>
-                </div>
+        
+<form id="formOuvidoria" action="https://formspree.io/f/mnjajrwq" method="POST" class="shadow p-4 rounded bg-white">
 
-                <div class="col-md-6">
-                    <input type="email" id="ouv-email" placeholder="Seu e-mail" class="form-control" required>
-                </div>
+    <div class="row g-3">
+        <div class="col-md-6">
+            <input type="text" name="nome" id="ouv-nome" placeholder="Seu nome" class="form-control" required>
+        </div>
 
-                <div class="col-12">
-                    <select id="ouv-tipo" class="form-select" required>
-                        <option value="">Tipo de Manifestação</option>
-                        <option>Denúncia</option>
-                        <option>Reclamação</option>
-                        <option>Sugestão</option>
-                        <option>Solicitação</option>
-                        <option>Elogio</option>
-                    </select>
-                </div>
+        <div class="col-md-6">
+            <input type="email" name="email" id="ouv-email" placeholder="Seu e-mail" class="form-control" required>
+        </div>
 
-                <div class="col-12">
-                    <textarea id="ouv-mensagem" placeholder="Descreva sua mensagem" rows="5" class="form-control" required></textarea>
-                </div>
+        <div class="col-12">
+            <select name="tipo" id="ouv-tipo" class="form-select" required>
+                <option value="">Tipo de Manifestação</option>
+                <option value="Denúncia">Denúncia</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Solicitação">Solicitação</option>
+                <option value="Elogio">Elogio</option>
+            </select>
+        </div>
 
-                <div class="col-12 text-center">
-                    <button class="btn btn-primary px-4">Enviar</button>
-                </div>
-            </div>
-        </form>
+        <div class="col-12">
+            <textarea name="mensagem" id="ouv-mensagem" placeholder="Descreva sua mensagem" rows="5" class="form-control" required></textarea>
+        </div>
+
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-primary px-4">Enviar</button>
+        </div>
+    </div>
+</form>
+
+
     </div>
 </section>
 
@@ -182,7 +189,7 @@
 
 <!-- RODAPÉ -->
 <footer class="rodape-laranja ">
-    <p class="m-0">© 2025 Prefeitura Municipal de São João da Ponte - MG | Todos os direitos reservados.</p>
+    <p class="m-0">© Prefeitura Municipal de São João da Ponte - MG | Todos os direitos reservados.</p>
     <p>Praça Olímpio Campos, nº 128, Centro 39430-000, Telefone: (38) 3234-1226, Horário de Atendimento: Das 8h às 17h.</p>
 </footer>
 
@@ -195,7 +202,18 @@
    🤚 
 </a>
 
-<script src="script.js"></script>
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+<script src="script.js" defer></script>
 
 
 

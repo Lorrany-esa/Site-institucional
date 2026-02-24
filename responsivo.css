@@ -157,9 +157,17 @@
     }
 
     .service-card, .news-card, .card { 
-        max-width: 200px; 
-        height: 200px; 
-    }
+    max-width: 200px; 
+    min-height: 200px; /* Define a altura mínima, mas permite crescer */
+    height: auto;      /* Deixa a altura flexível conforme o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;     /* Espaço interno para o texto não colar na borda */
+    text-align: center;
+    word-wrap: break-word; /* Garante que palavras longas quebrem */
+}
 
     .descricao, .melhorias { 
         width: 95%; 

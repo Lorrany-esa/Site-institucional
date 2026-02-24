@@ -102,15 +102,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Se não estava aberto, abre o submenu (adiciona a classe 'ativo')
                 if (!estaAberto) {
-                    submenuPai.classList.add('ativo');
+                    showSubmenu(submenuPai);
                 }
                 
                 // O submenu agora será exibido pelo CSS '.submenu.ativo ul { display: block !important; }'
             }
         });
+
+        link.addEventListener('mouseover', function(event) {
+            event.preventDefault();
+            showSubmenu(this.closest('.submenu'));
+        });
     });
 
+    function showSubmenu(submenuPai){
+        const ul = submenuPai.querySelector('ul');
+                    
+        // Calcula a posição do elemento pai
+        const rect = submenuPai.getBoundingClientRect();
+        
+        ul.style.position = 'fixed';
+        ul.style.top = rect.bottom + 'px';
+        ul.style.left = rect.left + 'px';
+        ul.style.width = rect.width + 'px';
+    } 
+
+
+
+
+
 }); // Fim CORRETO do DOMContentLoaded
+
+
     
     
 
